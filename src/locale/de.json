@@ -1,0 +1,23 @@
+{
+  "datetimeFormats": {
+    "short": {
+      "year": "2-digit",
+      "month": "2-digit",
+      "day": "2-digit"
+    },
+    "long": {
+      "year": "numeric",
+      "month": "2-digit",
+      "day": "2-digit"
+    },
+    "time": {
+      "hour": "numeric",
+      "minute": "numeric",
+      "second": "numeric"
+    }
+  },
+  "dashboardView": {
+    "title": "Motherroll Dashboard DE",
+    "titleShort": "MRDB"
+  }
+}
