@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import UITreeNode from "../ui/UITreeNode.vue";
-import { nextTick, ref, onBeforeMount } from "vue";
+import { nextTick, ref } from "vue";
 import { set } from "lodash";
 
 export interface IUIHamburger {
@@ -31,7 +31,7 @@ function resetToggleState(data: any) {
 function toggleCollapse() {
   if (!collapsed.value) {
     nextTick(() => {
-      resetToggleState(treeData.value);
+      resetToggleState(props.treeData);
     });
   }
   collapsed.value = !collapsed.value;
