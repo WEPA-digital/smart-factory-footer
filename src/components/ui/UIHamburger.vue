@@ -2,10 +2,16 @@
 import UITreeNode from "../ui/UITreeNode.vue";
 import { nextTick, ref, onBeforeMount } from "vue";
 import { set } from "lodash";
-import { fetchNavigationConfig } from "../../../../vue-app/src/api/config";
+
+export interface IUIHamburger {
+  treeData: any;
+}
+
+const props = withDefaults(defineProps<IUIHamburger>(), {
+  treeData: null,
+});
 
 const collapsed = ref(true);
-const treeData: any = ref([]);
 
 function resetToggleState(data: any) {
   data.forEach(currentData => {
@@ -30,12 +36,6 @@ function toggleCollapse() {
   }
   collapsed.value = !collapsed.value;
 }
-
-onBeforeMount(() => {
-  fetchNavigationConfig().then(response => {
-    treeData.value = response.embeddedConfig;
-  });
-});
 </script>
 
 <template>
