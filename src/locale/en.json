@@ -19,5 +19,14 @@
   "dashboardView": {
     "title": "Motherroll Dashboard",
     "titleShort": "MRDB"
+  },
+  "heatMap": {
+    "moisture": "Heat Map - Moisture",
+    "basisWeight": "Heat Map - Basis Weight",
+    "crepeRatio": "Heat Map - Crepe Ratio",
+    "errorMessage": "No data available",
+    "button": "Heatmaps",
+    "xAxisDescription": "Roll length (m)\n⌀ Roll diameter (m)",
+    "yAxisDescription": "Slider position\n(m)"
   }
 }
