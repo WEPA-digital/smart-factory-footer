@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import { useNavigationStore } from "../../../../vue-app/src/stores/navigationStore";
+import { useNavigationStore } from "@/stores/navigationStore";
 export interface IUITreeNode {
   data?: any;
   isChildren?: boolean;
