@@ -90,7 +90,7 @@ async function initializeHeatmap(orientation) {
         max: props.setValues.allowed_max,
         calculable: true,
         orient: "horizontal",
-        left: "20%",
+        left: "30%",
         top: 0,
         itemWidth: 15, // Adjust the width of the VisualMap item
         itemHeight: 100, // Adjust the height of the VisualMap item
@@ -103,7 +103,7 @@ async function initializeHeatmap(orientation) {
         max: 20,
         calculable: true,
         orient: "horizontal",
-        left: "20%",
+        left: "30%",
         top: 0,
         itemWidth: 15, // Adjust the width of the VisualMap item
         itemHeight: 100, // Adjust the height of the VisualMap item
@@ -149,7 +149,7 @@ async function initializeHeatmap(orientation) {
           align: "right",
         },
         nameRotate: 10,
-        nameGap: 20,
+        nameGap: 35,
       },
       visualMap: hmVisualMapStyle,
       series: [
@@ -190,11 +190,11 @@ async function initializeHeatmap(orientation) {
     } else {
       hmVisualMapStyle = {
         type: "continuous",
-        min: 6,
-        max: 8,
+        min: 10,
+        max: 20,
         calculable: true,
         orient: "horizontal",
-        left: 280,
+        left: 600,
         top: 0,
         itemWidth: 15, // Adjust the width of the VisualMap item
         itemHeight: 100, // Adjust the height of the VisualMap item
@@ -284,7 +284,7 @@ async function initializeHeatmap(orientation) {
   });
 }
 
-let hmSizingStyle;
+let hmSizingStyle = {};
 if (hmOrientation == "vertical") {
   if (hmYAxisData.length < 10) {
     hmSizingStyle = {
@@ -293,7 +293,7 @@ if (hmOrientation == "vertical") {
     };
   } else {
     hmSizingStyle = {
-      height: hmYAxisData.length * 35 + "px",
+      height: hmYAxisData.length * 40 + "px",
       width: "450px",
     };
   }
