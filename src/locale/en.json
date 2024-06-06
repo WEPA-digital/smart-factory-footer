@@ -1,0 +1,32 @@
+{
+  "datetimeFormats": {
+    "short": {
+      "year": "2-digit",
+      "month": "2-digit",
+      "day": "2-digit"
+    },
+    "long": {
+      "year": "numeric",
+      "month": "2-digit",
+      "day": "2-digit"
+    },
+    "time": {
+      "hour": "numeric",
+      "minute": "numeric",
+      "second": "numeric"
+    }
+  },
+  "dashboardView": {
+    "title": "Motherroll Dashboard",
+    "titleShort": "MRDB"
+  },
+  "heatMap": {
+    "moisture": "Heat Map - Moisture",
+    "basisWeight": "Heat Map - Basis Weight",
+    "crepeRatio": "Heat Map - Crepe Ratio",
+    "errorMessage": "No data available",
+    "button": "Heatmaps",
+    "xAxisDescription": "Roll length (m)\n⌀ Roll diameter (m)",
+    "yAxisDescription": "Slider position\n(m)"
+  }
+}
